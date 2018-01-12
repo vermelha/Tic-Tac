@@ -203,10 +203,10 @@ img:hover {
     letter-spacing: 0.8em;
   }
   .glow {
-    width: 90%;
+    width: 99%;
   }
   .board-default, .board, .board__settings, .board__difficulty {
-    width: 90%;
+    width: 99%;
   }
   .board__header-difficulty {
     margin-bottom: 10%;
@@ -234,26 +234,32 @@ img:hover {
     margin-top: -1%;
   }
   .board__slot {
-    height: 60px;
-    width: 60px;
+    height:80px;
+    width: 80px;
   }
   .board__settings img {
     height: 50px;
   }
-  .nought {
-    background-image: url('img/o_small.png');
+ .nought {
+    background-image: url('img/o_medium.png');
   }
   .cross {
-    background-image: url('img/x_small.png');
+    background-image: url('img/x_medium.png');
   }
 }
 @media only screen and (min-width: 350px) and (max-width:420px) {
+	 .glow {
+    width: 99%;
+  }
+  .board-default, .board, .board__settings, .board__difficulty {
+    width: 99%;
+  }
   .rows {
     margin-top: 15%;
   }
   .board__slot {
-    height: 80px;
-    width: 80px;
+    height:100px;
+    width: 100px;
   }
   .nought {
     background-image: url('img/o_medium.png');
