@@ -27,6 +27,7 @@ $(document).ready(function() {
 			$(".board__settings").css('visibility', 'visible');
 		} else {
 			$(".board__settings").css('visibility', 'hidden');
+
 		}
 	});
 	/* Player class has been switched from the settings menu */
@@ -63,11 +64,13 @@ $(document).ready(function() {
 					RUNNING = false;
 					$(".board__header-difficulty").html("It's a tie!");
 					$(".board__difficulty").removeClass('slideUp').addClass('slideDown');
+					$(".board").hide();
 					$(".board__settings-cog").css('visibility', 'hidden');
 				} else if (wins(GAMEBOARD, "X")) {
 					RUNNING = false;
 					$(".board__header-difficulty").html("You win!");
 					$(".board__difficulty").removeClass('slideUp').addClass('slideDown');
+					$(".board").hide();
 					$(".board__settings-cog").css('visibility', 'hidden');
 				} else {
 					minimax(GAMEBOARD, "O", 0);
@@ -78,6 +81,7 @@ $(document).ready(function() {
 						RUNNING = false;
 						$(".board__header-difficulty").html("You lost!");
 						$(".board__difficulty").removeClass('slideUp').addClass('slideDown');
+						$(".board").hide();
 						$(".board__settings-cog").css('visibility', 'hidden');
 					}
 				}
